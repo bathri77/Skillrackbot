@@ -1,0 +1,13 @@
+from datetime import datetime, timedelta
+
+# Input date in DD-MM-YYYY format
+date_input = input().strip()
+
+# Convert the input date to a datetime object
+date_format = "%d-%m-%Y"
+start_date = datetime.strptime(date_input, date_format)
+
+# Loop to get the next 10 dates
+for i in range(1, 11):
+    next_date = start_date + timedelta(days=i)
+    print(next_date.strftime(date_format))

@@ -1,0 +1,9 @@
+N = int(input())
+printed = False
+while N > 0:
+    if N%2 != 0:
+        print(N%10, end = "")
+        printed = True
+    N //= 10
+if not printed:
+    print('-1')

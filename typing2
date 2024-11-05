@@ -1,0 +1,4 @@
+N = int(input())
+numList = [int(val) for val in input().split()]
+X = int(input())
+print(numList[X-1])
